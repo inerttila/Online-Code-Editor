@@ -2,7 +2,6 @@
 This project is an online code editor that allows users to write and run Python and JavaScript code within a web browser. It utilizes technologies such as Python, JavaScript, HTML, and CSS to provide a user-friendly coding environment.
 
 ## Table of Contents
-- [Description](#description)
 - [Features](#features)
 - [How to Use](#how-to-use)
 - [Technologies Used](#technologies-used)
@@ -12,10 +11,6 @@ This project is an online code editor that allows users to write and run Python 
 - [Running the Project](#running-the-project)
 - [Usage](#usage)
 - [Contact](#Contact)
-
-## Description
-
-This project is an online code editor that enables users to write and execute Python and JavaScript code directly within a web browser. It provides a user-friendly coding environment utilizing technologies such as Python, JavaScript, HTML, and CSS.
 
 ## Features
 - CodeMirror integration for code editing with syntax highlighting and line numbers.
