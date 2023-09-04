@@ -70,8 +70,9 @@ Install the required Python packages:
 pip install -r requirements.txt
   ```
 ## Running the Project
-```bash
 Start the Flask application:
+```bash
+python server.py
  ```
  Open your web browser and go to http://localhost:5500.
  
