@@ -47,7 +47,7 @@ Before you begin, make sure you have the following software installed on your co
 1. Clone the repository to your local machine using Git:
 
 ```bash
-   git clone https://github.com/inerttila/online-code-editor.git
+git clone https://github.com/inerttila/online-code-editor.git
 ```
 Navigate to the project's directory:
   ```bash
