@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online JavaScript Code Editor</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+</head>
+<body>
+  <style>
+    body{
+      overflow: hidden;
+    }
+    /* Update CodeMirror theme for dark mode */
+    .CodeMirror {
+      height: 66vh; /* Full height of viewport */
+      width: 100%; /* Full width */
+    }        </style>
+  <textarea id="code-editor"></textarea>
+  <button onclick="runCode()">Run</button>
+  <div id="output"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/addon/display/fullscreen.min.js"></script>
+  <script>
+const editor = CodeMirror.fromTextArea(document.getElementById("code-editor"), {
+  lineNumbers: true,
+  mode: "javascript", // Set the mode to JavaScript
+  fullscreen: true, // Enable fullscreen mode for CodeMirror
+});
+
+// Function to run the code
+function runCode() {
+  const code = editor.getValue();
+
+  // Create a new iframe
+  const iframe = document.createElement("iframe");
+  iframe.style.border = "none";
+  iframe.style.width = "100%";
+  iframe.style.height = "300px"; // Set the desired height of the iframe
+
+  // Append the iframe to the output div
+  const outputDiv = document.getElementById("output");
+  outputDiv.innerHTML = ""; // Clear previous output
+  outputDiv.appendChild(iframe);
+
+  // Execute the JavaScript code in the iframe
+  const iframeWindow = iframe.contentWindow || iframe.contentDocument.defaultView;
+  try {
+    // Capture console.log statements and display them in the iframe's document
+    iframeWindow.console.log = function (message) {
+      iframe.contentDocument.body.innerHTML += "<pre>" + message + "</pre>";
+    };
+
+    // Execute the JavaScript code in the iframe's context
+    iframeWindow.eval(code);
+  } catch (error) {
+    // Display any errors that occurred during code execution
+    iframe.contentDocument.body.innerHTML += "<pre>Error: " + error + "</pre>";
+  }
+}
+  </script>
+</body>
+</html>
