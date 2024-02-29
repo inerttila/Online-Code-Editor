@@ -10,7 +10,6 @@ This project is an online code editor that allows users to write and run Python 
   - [Installation](#installation)
 - [Running the Project](#running-the-project)
 - [Usage](#usage)
-- [Contact](#Contact)
 
 ## Features
 - CodeMirror integration for code editing with syntax highlighting and line numbers.
@@ -78,11 +77,3 @@ python server.py
  
 ## Usage
 You can now use the online code editor to write and execute Python and JavaScript code within your browser.
-
-## Contact
-
-For inquiries or assistance, feel free to reach out through the following channels:
-
-- LinkedIn: [Inert Tila](https://al.linkedin.com/in/inerttila)
-
-You can email me for any questions or support related to this project, and you can also connect with me on LinkedIn to stay updated on my professional activities.
