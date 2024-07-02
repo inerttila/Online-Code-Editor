@@ -1,6 +1,3 @@
-
-Software Developer | Python, Django, JavaScript | Docker | Cloud Computing | Web Development
-
 # Online Code Editor Project
 This project is an online code editor that allows users to write and run Python and JavaScript code within a web browser. It utilizes technologies such as Python, JavaScript, HTML, and CSS to provide a user-friendly coding environment.
 
