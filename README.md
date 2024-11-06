@@ -1,7 +1,9 @@
 # Online Code Editor Project
+
 This project is an online code editor that allows users to write and run Python and JavaScript code within a web browser. It utilizes technologies such as Python, JavaScript, HTML, and CSS to provide a user-friendly coding environment.
 
 ## Table of Contents
+
 - [Features](#features)
 - [How to Use](#how-to-use)
 - [Technologies Used](#technologies-used)
@@ -12,18 +14,21 @@ This project is an online code editor that allows users to write and run Python 
 - [Usage](#usage)
 
 ## Features
+
 - CodeMirror integration for code editing with syntax highlighting and line numbers.
 - Ability to run Python and JavaScript code snippets.
 - Real-time display of code output and errors.
 - Support for multiple programming languages within the same interface.
 
 ## How to Use
+
 1. Open the code editor in your browser.
 2. Write Python or JavaScript code in the editor.
 3. Click the "Run" button to execute the code.
 4. The output or any errors will be displayed in the output area.
 
 ## Technologies Used
+
 - Python
 - JavaScript
 - HTML
@@ -48,32 +53,47 @@ Before you begin, make sure you have the following software installed on your co
 ```bash
 git clone https://github.com/inerttila/online-code-editor.git
 ```
+
 Navigate to the project's directory:
-  ```bash
+
+```bash
 cd online-code-editor
-  ```
+```
+
 Create a virtual environment (optional but recommended):
-  ```bash
+
+```bash
 python -m venv venv
-  ```
+```
+
 On Windows:
-  ```bash
+
+```bash
 venv\Scripts\activate
-  ```
+```
+
 On macOS and Linux:
-  ```bash
+
+```bash
 source venv/bin/activate
-  ```
+```
+
 Install the required Python packages:
-  ```bash
+
+```bash
 pip install -r requirements.txt
-  ```
+```
+
 ## Running the Project
+
 Start the Flask application:
+
 ```bash
 python server.py
- ```
- Open your web browser and go to http://localhost:5500.
- 
+```
+
+Open your web browser and go to http://localhost:5500.
+
 ## Usage
+
 You can now use the online code editor to write and execute Python and JavaScript code within your browser.
