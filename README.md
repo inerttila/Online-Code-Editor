@@ -1,4 +1,4 @@
-# Online Code Editor Project
+# <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" alt="git admin" width="40" /> Online Code Editor Project
 
 This project is an online code editor that allows users to write and run Python and JavaScript code within a web browser. It utilizes technologies such as Python, JavaScript, HTML, and CSS to provide a user-friendly coding environment.
 
